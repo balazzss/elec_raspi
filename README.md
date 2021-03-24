@@ -1,6 +1,10 @@
 # elec_raspi
     wget https://raw.githubusercontent.com/balazzss/elec_raspi/main/install.sh
+    
     ./install.sh
     
- ou
+ou
+    
     curl -L https://raw.githubusercontent.com/balazzss/elec_raspi/main/install.sh | bash
+    
+Ne pas lancer avec sudo !!!
