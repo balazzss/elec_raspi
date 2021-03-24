@@ -39,8 +39,8 @@ whiptail --title "Installation des programmes" --msgbox "Installation des progra
         sudo timedatectl set-timezone Europe/Brussels
 }
 
-function_add () {
-        wget 
+function_mail () {
+        wget https://raw.githubusercontent.com/balazzss/elec_raspi/main/mail_auto.py
 }
 
 function_changeSSHport () {
