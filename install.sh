@@ -73,6 +73,7 @@ function_mail () {
 wpa_supplicant () {
         WIFISSID=$(whiptail --inputbox "SSID" 8 78  --title "Entrer le SSID" 3>&1 1>&2 2>&3)
         WIFIPASSWD=$(whiptail --inputbox "WIFISSID" 8 78  --title "Entrer le mot de passe" 3>&1 1>&2 2>&3)
+        sudo chown $USER:$USER /etc/wpa_supplicant/wpa_supplicant.conf
         sudo wpa_passphrase "$WIFISSID" "$WIFIPASSWD" >> /etc/wpa_supplicant/wpa_supplicant.conf
 }
 
