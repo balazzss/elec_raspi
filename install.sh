@@ -104,6 +104,6 @@ main () {
         wpa_supplicant || error "User exited."
         function_SSH || error "User exited."
         end
-        clear
+        #clear
 }
 main
